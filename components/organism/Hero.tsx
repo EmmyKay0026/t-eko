@@ -20,7 +20,9 @@ const Hero = () => {
             <span className="text-primaryGreen  block text-[1rem] leading-[2rem] lg:text-[1.3rem] lg:leading-[2.6rem] ">
               Hello, I'm Emmanuel Kadiri
             </span>
-            Similar to the popular creation story, I give life to any project I
+            Similar to the <span className="hero-web-txt">popular</span>{" "}
+            creation story, I give{" "}
+            <span className="text-primaryGreen">life</span> to any project I
             work on.
           </h1>
           <Button>Download CV</Button>

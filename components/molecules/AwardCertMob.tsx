@@ -1,7 +1,7 @@
 import React from "react";
-import JourneySoFarMobCard from "../atoms/JourneySoFarMobCard";
+import AwardCertMobCard from "../atoms/AwardCertMobCard";
 
-const JourneySoFarMob = () => {
+const AwardCertMob = () => {
   const items = [
     {
       id: 1,
@@ -47,7 +47,7 @@ const JourneySoFarMob = () => {
       >
         {/* <div className={`w-[calc(100vw-var(--${containerDistance}))]`} /> */}
         {items.map((item) => (
-          <JourneySoFarMobCard item={item} key={item.id} />
+          <AwardCertMobCard item={item} key={item.id} />
         ))}
       </div>
       {/* <div className="sticky bottom-[20%] left-0 w-20 h-20">
@@ -76,4 +76,4 @@ const JourneySoFarMob = () => {
   );
 };
 
-export default JourneySoFarMob;
+export default AwardCertMob;

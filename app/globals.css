@@ -96,8 +96,49 @@ body::after {
 .font-fred {
   font-family: "Fredericka the Great", serif;
 }
-.blur_bg {
+/* .blur_bg {
   backdrop-filter: blur(4px);
   color: blueviolet;
-  /* background: red; */
+  background: red;
+} */
+
+/* .hero-web-txt {
+  color: var(--blue);
+} */
+.hero-web-txt::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50% 50% 0;
+  background-color: #008273;
+  position: relative;
+  bottom: 40px;
+}
+.life_before {
+  position: relative;
+  z-index: 1;
+}
+.life_before::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 40%;
+  z-index: -1;
+  position: absolute;
+  bottom: 5px;
+  background-color: #008273;
+}
+.back-filter {
+  backdrop-filter: blur(12px);
+}
+@media screen and (max-width: 768px) {
+  .hero-web-txt::after {
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body::after {
+    animation: 0.2s infinite noise !important;
+  }
 }

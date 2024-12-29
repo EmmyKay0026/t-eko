@@ -5,6 +5,7 @@ import Button from "../atoms/Button";
 import { CgClose } from "react-icons/cg";
 import { cn } from "@/lib/utils";
 import { BiRightArrow } from "react-icons/bi";
+import { FaArrowRight } from "react-icons/fa6";
 
 const PortfolioCard = () => {
   const [moreDetails, setMoreDetails] = useState<boolean>(false);
@@ -35,12 +36,12 @@ const PortfolioCard = () => {
             moreDetails ? "hidden" : ""
           )}
         >
-          Web development <BiRightArrow />{" "}
+          Web development <FaArrowRight />{" "}
         </p>
       </div>
       <div
         className={cn(
-          " absolute top-0  w-[0%] h-full flex flex-col justify-center pl-5 pr-2  bg-secondary dark:bg-accent shadow-extra opacity-80 blur_bg shadow-3xl rounded-[10px] transition-all duration-1000 ",
+          " absolute top-0  w-[0%] h-full flex flex-col justify-center pl-5 pr-2  bg-secondary dark:bg-accent shadow-extra opacity-80  shadow-3xl rounded-[10px] transition-all duration-1000 ",
           moreDetails ? "w-full md:w-[50%]  left-0" : "w-0 px-0  "
         )}
       >

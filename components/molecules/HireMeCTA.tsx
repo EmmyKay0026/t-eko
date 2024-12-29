@@ -39,7 +39,7 @@ const HireMeCTA = () => {
               r="70"
               fill="#008273"
               stroke="#c8c8c8"
-              className="backdrop-blur-md blur_bg opacity-30 shadow-nav-shadow border-[1px] border-solid border-accent "
+              className=" opacity-30 shadow-nav-shadow border-[1px] border-solid border-accent "
             />
             <path
               id="innerCirclePath"

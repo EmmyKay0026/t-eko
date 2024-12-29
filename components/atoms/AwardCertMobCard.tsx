@@ -7,7 +7,7 @@ import {
 } from "react-icons/io";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
-const JourneySoFarMobCard = ({ item }: any) => {
+const AwardCertMobCard = ({ item }: any) => {
   const [experienceImg, setExperienceImg] = useState<number>(0);
 
   const prevImage = () => {
@@ -20,7 +20,7 @@ const JourneySoFarMobCard = ({ item }: any) => {
   };
   return (
     <div
-      className="flex flex-col wh-screen w-screen items-start justify-left gap-[20px]  overflow-hidden lg:flex-row"
+      className="flex flex-col wh-screen w-screen items-start justify-left gap-[20px]  overflow-hidden lg:flex-row-reverse"
       //   ref={ref}
     >
       <article className="relative w-[80%]">
@@ -69,4 +69,4 @@ const JourneySoFarMobCard = ({ item }: any) => {
   );
 };
 
-export default JourneySoFarMobCard;
+export default AwardCertMobCard;

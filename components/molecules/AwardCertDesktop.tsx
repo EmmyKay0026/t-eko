@@ -13,7 +13,11 @@ import {
 const items = [
   {
     id: 1,
-    img: ["/images/experi.png", "/images/experience.png"],
+    img: [
+      "/images/experi.png",
+      "/images/experience.png",
+      "/images/portfolio1.png",
+    ],
     title: "Full Stack Blog Application",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
     link: "/",
@@ -78,13 +82,15 @@ const ListItem = ({ item }: any) => {
     console.log(experienceImg);
   };
   const nextImage = () => {
-    setExperienceImg((prev) => (prev === item.img.length - 1 ? 0 : prev + 1));
+    setExperienceImg((prev) =>
+      prev === item.img.length - 1 ? prev - 1 : prev + 1
+    );
     console.log(experienceImg);
   };
 
   return (
     <div
-      className="flex flex-col wh-screen w-screen items-center justify-center gap-[100px] overflow-hidden lg:flex-row"
+      className="flex flex-col wh-screen w-screen items-center justify-center gap-[100px] overflow-hidden lg:flex-row-reverse"
       ref={ref}
     >
       <motion.div
@@ -123,20 +129,17 @@ const ListItem = ({ item }: any) => {
       >
         <motion.h1
           variants={textVariants}
-          className="text-[2rem] leading-[2.4rem] font-bold  text-black dark:text-white md:text-[2.4rem] md:leading-[2.8rem] lg:text-[3rem] lg:leading-[3.4rem]"
+          className="text-[2rem] leading-[2.4rem] font-bold  text-white md:text-[2.4rem] md:leading-[2.8rem] lg:text-[3rem] lg:leading-[3.4rem]"
         >
           <motion.span
             variants={textVariants}
-            className="text-primaryGreen  block text-[1rem] leading-[2rem] lg:text-[1.3rem] lg:leading-[2.6rem] "
+            className="text-darkGreen dark:text-primaryGreen  block text-[1rem] leading-[2rem] lg:text-[1.3rem] lg:leading-[2.6rem] "
           >
             June 2023 - June 2024
           </motion.span>
           {item.title}
         </motion.h1>
-        <motion.p
-          variants={textVariants}
-          className="font-light text-secondary dark:text-accent"
-        >
+        <motion.p variants={textVariants} className="font-light text-accent">
           {item.desc}
         </motion.p>
         {/* <motion.a variants={textVariants} href={item.link}>
@@ -151,7 +154,7 @@ const ListItem = ({ item }: any) => {
   );
 };
 
-const JourneySoFarDesktop = () => {
+const AwardCertDesktop = () => {
   const [containerDistance, setContainerDistance] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -176,8 +179,10 @@ const JourneySoFarDesktop = () => {
 
   const xTranslate = useTransform(
     scrollYProgress,
-    [0, 1],
-    [0, -window.innerWidth * items.length]
+    [1, 0],
+    // [0, 1],
+    // [0, -window.innerWidth * items.length]
+    [-window.innerWidth * items.length, 0]
   );
 
   return (
@@ -217,4 +222,4 @@ const JourneySoFarDesktop = () => {
   );
 };
 
-export default JourneySoFarDesktop;
+export default AwardCertDesktop;

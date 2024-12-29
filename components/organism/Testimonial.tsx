@@ -2,6 +2,7 @@ import React from "react";
 import { TestionialCards } from "../molecules/TestimonialCard";
 import Button from "../atoms/Button";
 import TitleText from "../molecules/TitleText";
+import TrustedBy from "./TrustedBy";
 
 export const Testimonial = () => {
   return (
@@ -39,6 +40,7 @@ export const Testimonial = () => {
           Download CV
         </button>
       </div>
+      {/* <TrustedBy /> */}
     </section>
   );
 };
