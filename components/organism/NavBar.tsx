@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 import { PiMoonStarsFill } from "react-icons/pi";
 import { IoMdSunny } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
-import { MdCloseFullscreen } from "react-icons/md";
 
 const NavBar = () => {
   const [theme, setTheme] = useState("light");
@@ -54,7 +53,7 @@ const NavBar = () => {
             )}
           </button>
           {showMenu ? (
-            <MdCloseFullscreen
+            <IoClose
               onClick={() => setShowMenu((prev) => !prev)}
               className="text-[2.3rem] cursor-pointer text-secondary dark:text-accent"
             />

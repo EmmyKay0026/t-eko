@@ -19,9 +19,9 @@ export default function Home() {
       <Portfolio />
       <Services />
       <Testimonial />
-      {/* <JourneySoFarSummary /> */}
+      <JourneySoFarSummary />
       <Gallery />
-      {/* <AwardCertSummary /> */}
+      <AwardCertSummary />
       <Footer />
     </>
   );

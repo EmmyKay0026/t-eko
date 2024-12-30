@@ -5,15 +5,15 @@ import TitleText from "../molecules/TitleText";
 const Gallery = () => {
   const imgGallery = [
     "/images/gallery/p1.jpg",
-    "/images/gallery/p2.png",
+    "/images/gallery/p2.jpg",
     "/images/gallery/p3.jpg",
-    "/images/gallery/p4.png",
-    "/images/gallery/p5.png",
+    "/images/gallery/p4.jpg",
+    "/images/gallery/p5.jpg",
     "/images/gallery/p6.jpg",
     "/images/gallery/p7.jpg",
     "/images/gallery/p8.jpg",
-    "/images/gallery/p9.png",
-    "/images/gallery/p10.png",
+    "/images/gallery/p9.jpg",
+    // "/images/gallery/p10.png",
   ];
   return (
     <section className=" py-[40px] px-[20px] md:px-[50px] lg:px-[70px]">
@@ -24,7 +24,7 @@ const Gallery = () => {
       />
       <div className="grid grid-cols-3 ">
         {imgGallery.map((item, index) => (
-          <div key={index} className="h-[200px] overflow-clip">
+          <div key={index} className="3h-[200px] overflow-clip">
             <Image
               src={item}
               alt=""

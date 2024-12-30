@@ -60,7 +60,7 @@ const HireMeCTA = () => {
       </motion.a>
 
       <div className="bg"></div>
-      <div className="absolute top-[34%] left-[34%] bg-accent rounded-full px-[10px] py-[10px] ">
+      <div className="absolute cursor-pointer top-[34%] left-[34%] bg-accent rounded-full px-[10px] py-[10px] ">
         <RiPhoneFill className="text-[1.6rem]" />
       </div>
     </article>

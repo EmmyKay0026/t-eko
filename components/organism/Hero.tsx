@@ -15,7 +15,7 @@ const Hero = () => {
         className="absolute  top-[40%] right-0 z-[-1]  invert dark:invert-0 md:top-[25%] lg:bottom-5 lg:top-[initial] lg:left-0"
       />
       <section className="flex flex-col justify-between px-[20px] md:px-[50px] lg:px-[70px] lg:flex-row ">
-        <div className="w-full z-[2] pt-6 lg:w-[50%]">
+        <div className="w-full z-[2] pt-6 lg:w-[52%]">
           <h1 className="text-[2rem] leading-[2.4rem] font-bold  text-secondary dark:text-accent md:text-[2.7rem] md:leading-[3.4rem] lg:text-[3rem] lg:leading-[3.4rem]">
             <span className="text-primaryGreen  block text-[1rem] leading-[2rem] lg:text-[1.3rem] lg:leading-[2.6rem] ">
               Hello, I'm Emmanuel Kadiri
@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
         </div>
       </section>{" "}
-      <div className="hidden fixed right-[20px] bottom-0 md:block lg:right-[40px] z-[999]">
+      <div className="hidden fixed right-[20px] bottom-0 md:block lg:right-[40px] z-[997]">
         <HireMeCTA />
       </div>
     </main>

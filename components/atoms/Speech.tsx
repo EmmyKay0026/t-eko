@@ -26,7 +26,7 @@ const Speech = () => {
         speed={5}
         style={{ color: "white", display: "inline-block" }}
         repeat={Infinity}
-        className="text-[3.5rem] md:text-[5rem]"
+        className="text-[3.3rem] md:text-[5rem]"
       />
     </section>
   );
