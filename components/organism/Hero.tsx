@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="w-full z-[2] pt-6 lg:w-[52%]">
           <h1 className="text-[2rem] leading-[2.4rem] font-bold  text-secondary dark:text-accent md:text-[2.7rem] md:leading-[3.4rem] lg:text-[3rem] lg:leading-[3.4rem]">
             <span className="text-primaryGreen  block text-[1rem] leading-[2rem] lg:text-[1.3rem] lg:leading-[2.6rem] ">
-              Hello, I'm Emmanuel Kadiri
+              Hello, I&apos;m Emmanuel Kadiri
             </span>
             Similar to the <span className="hero-web-txt">popular</span>{" "}
             creation story, I give{" "}

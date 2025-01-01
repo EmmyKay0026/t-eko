@@ -13,10 +13,10 @@ const AboutMe = () => {
         />
         <p className="text-[18px] mb-5 mt-2 text-secondary dark:text-accent">
           On my way throughout the journey back to Iyana-Ipaja, I slept, woke up
-          and read Akin Alabi's newly released book titled ‘How To Sell To
-          Nigerians’. I slept again, and the cycle went on like that. By the
-          time I got home, I was tired. I got something to eat, then I spoke to
-          one or two friends over the phone.
+          and read Akin Alabis newly released book titled How To Sell To
+          Nigerians. I slept again, and the cycle went on like that. By the time
+          I got home, I was tired. I got something to eat, then I spoke to one
+          or two friends over the phone.
         </p>
         <p className="text-[18px] mb-5  text-secondary dark:text-accent">
           By the time I got home, I was tired. I got something to eat, then I
