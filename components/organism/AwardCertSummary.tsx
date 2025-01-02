@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import JourneySoFarDesktop from "../molecules/JourneySoFarDesktop";
 import JourneySoFarMob from "../molecules/JourneySoFarMob";
 import TitleText from "../molecules/TitleText";
@@ -14,7 +14,7 @@ const AwardCertSummary = () => {
         largeClassName="mb-[30px] text-white "
         smallClassName="text-darkGreen dark:text-primaryGreen"
       />
-      <AwardCertDesktop />
+      <Suspense fallback={"loading"}>{/* <AwardCertDesktop /> */}</Suspense>
       <AwardCertMob />
     </section>
   );

@@ -12,9 +12,7 @@ const JourneySoFarSummary = () => {
         largeHeading="My Journey So Far"
         largeClassName="mb-[30px]"
       />
-      <Suspense fallback={"loading"}>
-        <JourneySoFarDesktop />
-      </Suspense>
+      <Suspense fallback={"loading"}>{/* <JourneySoFarDesktop /> */}</Suspense>
       <JourneySoFarMob />
     </section>
   );
