@@ -28,7 +28,7 @@ const Gallery = () => {
             <Image
               src={item}
               alt=""
-              className="saturate-0 hover:saturate-100"
+              className="saturate-0 hover:saturate-100 transition-all duration-500"
               width={500}
               height={500}
             />

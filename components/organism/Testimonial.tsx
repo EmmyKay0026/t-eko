@@ -36,7 +36,7 @@ export const Testimonial = () => {
         />
       </div>
       <div className="flex justify-center w-full">
-        <button className="testi-cta teaser-btn btn w-[50%] md:w-[30%] px-[30px] py-[20px] rounded-[10px] font-bold my-4 bg-accent text-secondary dark:bg-primaryGreen dark:text-accent ">
+        <button className="testi-cta teaser-btn btn w-full md:w-[30%] px-[30px] py-[20px] rounded-[10px] font-bold my-4 bg-accent text-secondary dark:bg-primaryGreen dark:text-accent ">
           Download CV
         </button>
       </div>

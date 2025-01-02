@@ -9,6 +9,7 @@ import AwardCertSummary from "@/components/organism/AwardCertSummary";
 import Gallery from "@/components/organism/Gallery";
 import Footer from "@/components/organism/Footer";
 import TrustedBy from "@/components/organism/TrustedBy";
+import Contact from "@/components/organism/Contact";
 
 export default function Home() {
   return (
@@ -19,9 +20,10 @@ export default function Home() {
       <Portfolio />
       <Services />
       <Testimonial />
-      <JourneySoFarSummary />
+      {/* <JourneySoFarSummary /> */}
       <Gallery />
-      <AwardCertSummary />
+      {/* <AwardCertSummary /> */}
+      <Contact />
       <Footer />
     </>
   );

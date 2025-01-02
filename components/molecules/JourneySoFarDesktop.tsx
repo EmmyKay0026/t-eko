@@ -47,7 +47,7 @@ const items = [
     link: "/",
   },
 ];
-
+// let window: any;
 const imgVariants = {
   initial: { x: -500, y: 500, opacity: 0 },
   animate: {
@@ -75,11 +75,9 @@ const ListItem = ({ item }: any) => {
 
   const prevImage = () => {
     setExperienceImg((prev) => (prev === 0 ? 0 : prev - 1));
-    console.log(experienceImg);
   };
   const nextImage = () => {
     setExperienceImg((prev) => (prev === item.img.length - 1 ? 0 : prev + 1));
-    console.log(experienceImg);
   };
 
   return (
@@ -157,7 +155,7 @@ const JourneySoFarDesktop = () => {
 
   useEffect(() => {
     const calculateDistance = () => {
-      if (ref.current) {
+      if (ref.current && typeof window !== "undefined") {
         const rect = ref.current.getBoundingClientRect();
         setContainerDistance(rect.left);
       }
@@ -174,12 +172,17 @@ const JourneySoFarDesktop = () => {
 
   const { scrollYProgress } = useScroll({ target: ref });
 
+  // const useGetXTranslate = () => {
+  //   if (typeof window !== "undefined") {
   const xTranslate = useTransform(
     scrollYProgress,
     [0, 1],
     [0, -window.innerWidth * items.length]
   );
 
+  //     return xTranslate;
+  //   }
+  // };
   return (
     <div className="relative h-[600vh] hidden lg:block " ref={ref}>
       <motion.div

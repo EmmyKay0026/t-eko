@@ -37,7 +37,7 @@ const NavBar = () => {
     <>
       <nav
         className={cn(
-          "bg-accent dark:bg-secondary flex items-center justify-between sticky opacity-90 top-0 shadow-nav-shadow dark:shadow-nav-shadow-dark px-[20px] md:px-[50px] lg:px-[70px] py-[15px] z-[999]",
+          "bg-accent dark:bg-secondary flex items-center justify-between sticky opacity-90 top-0 shadow-nav-shadow dark:shadow-nav-shadow-dark backdrop-blur-md px-[20px] md:px-[50px] lg:px-[70px] py-[15px] z-[999]",
           showMenu ? "bg-white dark:bg-black shadow-none" : ""
         )}
       >

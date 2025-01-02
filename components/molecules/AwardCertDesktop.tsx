@@ -160,7 +160,7 @@ const AwardCertDesktop = () => {
 
   useEffect(() => {
     const calculateDistance = () => {
-      if (ref.current) {
+      if (ref.current && typeof window !== "undefined") {
         const rect = ref.current.getBoundingClientRect();
         setContainerDistance(rect.left);
       }

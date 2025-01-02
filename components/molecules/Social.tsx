@@ -8,12 +8,12 @@ import Image from "next/image";
 export const Social = ({ className }: { className: string }) => {
   return (
     <>
-      <div className="flex items-center gap-[10px]">
+      <div className="flex justify-between items-center gap-[10px]">
         <a target="_blank" href="https://www.linkedin.com/in/kadiri-o-emmanuel">
           <Image
             width={40}
             height={40}
-            className="btn saturate-0 hover:saturate-100"
+            className="btn saturate-0 hover:saturate-100 "
             src={"/images/linkedin.png"}
             alt="linkedin-icon"
           />

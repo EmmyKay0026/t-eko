@@ -21,6 +21,40 @@ h6,
 button {
   font-family: "Montserrat", serif;
 }
+.gradient-border {
+  position: relative;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+  /* width: 350px; */
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 1.6px;
+  left: 1.6px;
+  right: 1.6px;
+  bottom: 1.6px;
+  border-radius: 20px;
+  padding: 5px;
+  background: white;
+  z-index: 1;
+  /* width: 330px; */
+  /* height: 50px; */
+}
+
+.two-gradient {
+  background: linear-gradient(180deg, #14ae5c, transparent);
+}
+.one-gradient {
+  background: linear-gradient(180deg, #6c63ff, transparent);
+}
+.three-gradient {
+  background: linear-gradient(180deg, #f75133, transparent);
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #373838;
@@ -99,6 +133,9 @@ body::after {
 }
 .font-source {
   font-family: "Source Code Pro", serif;
+}
+.font-monst {
+  font-family: "Montserrat", serif;
 }
 /* .blur_bg {
   backdrop-filter: blur(4px);

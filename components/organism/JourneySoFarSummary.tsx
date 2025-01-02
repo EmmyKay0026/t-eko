@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { Suspense } from "react";
 import JourneySoFarDesktop from "../molecules/JourneySoFarDesktop";
 import JourneySoFarMob from "../molecules/JourneySoFarMob";
 import TitleText from "../molecules/TitleText";
@@ -11,7 +12,9 @@ const JourneySoFarSummary = () => {
         largeHeading="My Journey So Far"
         largeClassName="mb-[30px]"
       />
-      <JourneySoFarDesktop />
+      <Suspense fallback={"loading"}>
+        <JourneySoFarDesktop />
+      </Suspense>
       <JourneySoFarMob />
     </section>
   );
