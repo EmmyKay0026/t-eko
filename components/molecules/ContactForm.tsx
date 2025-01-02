@@ -2,6 +2,7 @@
 import React, { MutableRefObject, useRef } from "react";
 import TitleText from "./TitleText";
 import Input from "../atoms/Input";
+import Button from "../atoms/Button";
 
 const initialValue = {
   name: "",
@@ -144,6 +145,9 @@ const ContactForm = () => {
             autoComplete="off"
             required
           />
+        </div>
+        <div className="flex justify-end">
+          <Button>Send</Button>
         </div>
       </form>
     </>

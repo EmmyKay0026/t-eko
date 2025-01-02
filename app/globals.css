@@ -182,4 +182,7 @@ body::after {
   body::after {
     animation: 0.2s infinite noise !important;
   }
+  .hero-web-txt::after {
+    display: none;
+  }
 }
