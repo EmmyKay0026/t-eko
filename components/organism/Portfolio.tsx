@@ -10,7 +10,7 @@ const Portfolio = () => {
       </div>
       <div className=" grid grid-cols-1 lg:grid-cols-2 space-y-3  md:gap-[10px] mt-5 lg:space-y-0 lg:gap-[30px] lg:mt-10 ">
         <PortfolioCard />
-        <PortfolioCard />
+        <PortfolioCard cardState={true} />
       </div>
     </section>
   );

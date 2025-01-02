@@ -7,8 +7,8 @@ import { cn } from "@/lib/utils";
 import { BiRightArrow } from "react-icons/bi";
 import { FaArrowRight } from "react-icons/fa6";
 
-const PortfolioCard = () => {
-  const [moreDetails, setMoreDetails] = useState<boolean>(false);
+const PortfolioCard = ({ cardState = false }: { cardState?: boolean }) => {
+  const [moreDetails, setMoreDetails] = useState<boolean>(cardState);
   return (
     <article className="rounded-[10px] relative w-full lg:w-[500px] h-[328px]">
       <Image
